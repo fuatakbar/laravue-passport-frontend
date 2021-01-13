@@ -15,6 +15,7 @@
                                 <input type="email" v-model="user.email" class="form-control"
                                     placeholder="Email Address">
                             </div>
+
                             <div v-if="validation.email" class="mt-2 alert alert-danger">
                                 {{ validation.email[0] }}
                             </div>
@@ -27,6 +28,7 @@
                             <div v-if="validation.password" class="mt-2 alert alert-danger">
                                 {{ validation.password[0] }}
                             </div>
+                            
                             <button type="submit" class="btn btn-primary btn-block">LOGIN</button>
                         </form>
                     </div>
